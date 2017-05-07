@@ -58,3 +58,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# bower based dumps
+bower_components/*

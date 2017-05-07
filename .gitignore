@@ -61,3 +61,6 @@ $RECYCLE.BIN/
 
 # bower based dumps
 bower_components/*
+/bin/
+.classpath
+.project

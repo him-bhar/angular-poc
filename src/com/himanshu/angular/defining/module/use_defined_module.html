@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="../../../../../../bower_components/angularjs/angular.min.js"></script>
+<script src="../../../../../../js/use_defined_module.js"></script>
+<body>
+
+<form ng-app="myApp">
+  <!-- Controllers takes precedence when it comes to accessing variables in scope -->
+  <div ng-controller="myCtrl">
+    <p><span ng-bind="firstName"></span></p>
+    <test-directive></test-directive>
+  </div>
+  <div ng-controller="myCtrl2">
+    <input type="text" ng-model="firstName"></input>
+    <o><span ng-bind="firstName"></span></p>
+  </div>
+  <div ng-controller="myCtrl">
+    <p><span ng-bind="firstName"></span></p>
+  </div>
+</form>
+</body>
+</html>

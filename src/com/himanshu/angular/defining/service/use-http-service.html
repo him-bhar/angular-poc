@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="../../../../../../bower_components/angularjs/angular.js"></script>
+<script type="text/javascript" src="../../../../../../js/use-http-service.js"></script>
+<head>
+</head>
+
+<!-- The $http Service
+     The $http service is one of the most common used services in AngularJS applications. 
+     The service makes a request to the server, and lets your application handle the response. 
+     
+     Response Properties
+     The response from the server is an object with these properties:
+
+     .config the object used to generate the request.
+     .data a string, or an object, carrying the response from the server.
+     .headers a function to use to get header information.
+     .status a number defining the HTTP status.
+     .statusText a string defining the HTTP status.
+-->
+
+<body>
+  <form name="myForm" ng-app="myApp">
+    <div ng-controller="httpCtrl">
+      <h3>{{httpResponse}}</h3>
+    </div>
+
+    <p>This example uses the built-in $http service to get the absolute url of the page.</p>
+  </form>
+</body>
+</html>

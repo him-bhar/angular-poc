@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="../../../../../../bower_components/angularjs/angular.min.js"></script>
+<script src="../../../../../../js/validate-user-input.js"></script>
+<link rel="stylesheet" href="../../../../../../css/validate-user-input.css" />
+<!-- <style>
+input.ng-invalid {
+    background-color: lightblue;
+}
+</style> -->
+<!-- The ng-model directive adds/removes the following classes, according to the status of the form field:
+
+ng-empty
+ng-not-empty
+ng-touched
+ng-untouched
+ng-valid
+ng-invalid
+ng-dirty
+ng-pending
+ng-pristine -->
+<body>
+
+<form name="myForm" ng-app="myApp">
+  <!-- Controllers takes precedence when it comes to accessing variables in scope -->
+  <div ng-controller="myCtrl">
+    <input type="text" name="myEmail" ng-model="email" required="required"></input>
+  </div>
+  <div ng-controller="myCtrl">
+    <h1>Status</h1>
+    {{myForm.myEmail.$valid}}
+    {{myForm.myEmail.$dirty}}
+    {{myForm.myEmail.$touched}}
+  </div>
+</form>
+</body>
+</html>

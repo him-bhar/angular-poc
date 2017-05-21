@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<script src="../../../../../..//bower_components/angularjs/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="person={firstName:'Himanshu', lastName:'Bhardwaj'};points=[10,20,30,40,50];myColor='lightblue'">
+  <p>Accessing first name from person: {{ person.firstName }}</p>
+  <p>Accessing 2nd element of array:<span ng-bind="points[2]"></span> </p>
+  <input style="background-color:{{myColor}}" ng-model="myColor" value="{{myColor}}">
+</div>
+
+</body>
+</html>

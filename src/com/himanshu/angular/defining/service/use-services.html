@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="../../../../../../bower_components/angularjs/angular.js"></script>
+<script type="text/javascript" src="../../../../../../js/use-services.js"></script>
+<head>
+</head>
+<!-- What is a Service?
+     In AngularJS, a service is a function, or object, that is available for, and limited to, your AngularJS application.
+     AngularJS has about 30 built-in services. One of them is the $location service. -->
+<body>
+  <form name="myForm" ng-app="myApp">
+    <div ng-controller="locationCtrl">
+      <p>The url of this page is:</p>
+      <h3>{{myUrl}}</h3>
+    </div>
+
+    <p>This example uses the built-in $location service to get the absolute url of the page.</p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="../../../../../../bower_components/angularjs/angular.js"></script>
+<script type="text/javascript" src="../../../../../../js/scopes.js"></script>
+<head>
+</head>
+<body>
+  <form name="myForm" ng-app="myApp">
+    <div ng-controller="myCtrl">
+      color Inside myCtrl controller scope: <b>{{color}}</b>
+    </div>
+    <div ng-controller="testCtrl">
+      color Inside testCtrl controller scope (Since not defined in controller, hence going to app-scope which is rootScope): <b>{{color}}</b>
+    </div>
+  </form>
+</body>
+</html>

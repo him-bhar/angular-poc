@@ -1,0 +1,20 @@
+/* The ng-model directive adds/removes the following classes, according to the status of the form field:
+
+ng-empty
+ng-not-empty
+ng-touched
+ng-untouched
+ng-valid
+ng-invalid
+ng-dirty
+ng-pending
+ng-pristine */
+
+@CHARSET "ISO-8859-1";
+input.ng-invalid {
+    background-color: red;
+}
+
+input.ng-touched {
+    background-color: yellow;
+}

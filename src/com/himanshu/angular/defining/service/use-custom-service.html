@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="../../../../../../bower_components/angularjs/angular.js"></script>
+<script type="text/javascript" src="../../../../../../js/use-custom-service.js"></script>
+<head>
+</head>
+
+<!-- Custom service created can be injected into controller/filter/directive/other services as a dependency. 
+-->
+
+<body ng-app="myApp">
+  <div ng-controller="myCtrl">
+    <p>A custom service with a method that converts a given number into a hexadecimal number.</p>
+    <p>The hexadecimal value of 255 is:</p>
+    <h1>{{hex}}</h1>
+    <br>
+    <p>
+    <p>A custom service injected into the filter that converts a given number into a hexadecimal number.</p>
+    <h1>{{255 | myFormat}}</h1>
+  </div>
+  <div ng-controller="arrayCtrl">
+  <p>A custom service injected into the filter that converts a given number into a hexadecimal number, used in an array</p>
+    <ul>
+      <li ng-repeat="x in counts">{{x | myFormat}}</li>
+    </ul>
+  </div>
+  
+</body>
+</html>

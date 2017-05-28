@@ -19,13 +19,21 @@
      .statusText a string defining the HTTP status.
 -->
 
-<body>
-  <form name="myForm" ng-app="myApp">
+<body ng-app="myApp">
+  <form name="myForm">
     <div ng-controller="httpCtrl">
       <h3>{{httpResponse}}</h3>
+      <h4>{{statusCode}}</h4>
+      <h4>{{statusText}}</h4>
     </div>
-
     <p>This example uses the built-in $http service to get the absolute url of the page.</p>
+    <p>Another sample</p>
+    <div ng-controller="jsonSampleCtrl">
+      <h1>Total records fetched: {{data.length}}</h1>
+      <ul>
+        <li ng-repeat="x in data">{{x.Name +", "+x.City+", "+x.Country}}</li>
+      </ul>
+    </div>
   </form>
 </body>
 </html>
